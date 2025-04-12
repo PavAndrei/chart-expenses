@@ -88,5 +88,6 @@
 
   .amountLabel {
     font-size: 10px;
+    padding: 0 4px;
   }
 }
