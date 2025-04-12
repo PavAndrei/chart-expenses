@@ -1,0 +1,56 @@
+.list {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--cream);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.day {
+  color: var(--medium-brown);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.barSvg {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.bar,
+.currentBar {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+
+  rx: 12;
+
+  transition: opacity 0.3s ease-in-out;
+}
+
+.bar:hover,
+.currentBar:hover {
+  opacity: 0.7;
+}
+
+.bar {
+  fill: var(--soft-red);
+}
+
+.currentBar {
+  fill: var(--cyan);
+}

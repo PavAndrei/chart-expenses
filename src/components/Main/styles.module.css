@@ -1,0 +1,46 @@
+.mainWrapper {
+  padding: 40px;
+  background-color: var(--white);
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.title {
+  color: var(--dark-brown);
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.currentAmount {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 5px;
+}
+
+.prevAmount {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  gap: 5px;
+  text-align: right;
+}
+
+.description {
+  color: var(--medium-brown);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.total {
+  font-weight: 700;
+  font-size: 40px;
+}

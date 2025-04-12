@@ -1,0 +1,25 @@
+.headerWrapper {
+  background-color: var(--soft-red);
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--white);
+}
+
+.title {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.balance {
+  font-weight: 700;
+  font-size: 32px;
+}
