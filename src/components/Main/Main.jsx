@@ -9,7 +9,7 @@ export const Main = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("/data.json")
+    fetch("./public/data.json")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
