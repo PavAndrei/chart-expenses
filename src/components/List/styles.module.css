@@ -3,29 +3,31 @@
   padding-bottom: 40px;
   border-bottom: 1px solid var(--cream);
 
-  display: flex;
-  justify-content: space-between;
-  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: end;
+
+  justify-content: center;
 }
 
 .item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 15px;
   text-align: center;
+  height: 250px;
+  justify-content: flex-end;
 }
 
 .day {
   color: var(--medium-brown);
   font-weight: 400;
   font-size: 20px;
+  text-align: center;
 }
 
 .barSvg {
-  height: 100%;
   width: 100%;
-  border-radius: 12px;
 
   display: flex;
   align-items: flex-end;
@@ -34,7 +36,7 @@
 .bar,
 .currentBar {
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   height: 100%;
 
   rx: 12;
@@ -53,4 +55,34 @@
 
 .currentBar {
   fill: var(--cyan);
+}
+
+.decor {
+  width: 100%;
+  height: 30px;
+  background-color: var(--dark-brown);
+}
+
+.amountLabel {
+  background-color: var(--dark-brown);
+  color: var(--white);
+  padding: 10px 0;
+  width: calc(100% - 10px);
+  font-size: 0.75rem;
+  border-radius: 4px;
+  transform: translateY(0px);
+  white-space: nowrap;
+  transition: opacity 0.3s;
+  opacity: 0;
+  text-align: center;
+}
+
+.item:hover .amountLabel {
+  opacity: 1;
+}
+
+@media (max-width: 400px) {
+  .day {
+    font-size: 14px;
+  }
 }
