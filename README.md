@@ -1,6 +1,6 @@
-# Frontend Mentor - Conference ticket generator solution
+# Frontend Mentor - Expenses chart component solution
 
-This is a solution to the [Conference ticket generator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/conference-ticket-generator-oq5gFIU12w). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -21,16 +21,11 @@ This is a solution to the [Conference ticket generator challenge on Frontend Men
 
 Users should be able to:
 
-- Complete the form with their details
-- Receive form validation messages if:
-  - Any field is missed
-  - The email address is not formatted correctly
-  - The avatar upload is too big or the wrong image format
-- Complete the form only using their keyboard
-- Have inputs, form field hints, and error messages announced on their screen reader
-- See the generated conference ticket when they successfully submit the form
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+- View a bar chart of their spending over the last 7 days
+- See the current day highlighted in a different color
+- Hover over the bars to see the exact amount spent
+- View the total spending this month and the comparison with last month
+- See responsive layout and smooth hover interactions
 
 ### Screenshot
 
@@ -38,52 +33,47 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://www.frontendmentor.io/solutions/responsive-ticket-generator-app-with-react-aAiVst3fVa)
-- Live Site URL: [live](https://conference-ticket-generator-peach-rho.vercel.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-react-chart-spendings-component-FtHs8kiwJ2)
+- Live Site URL: [Live](https://chart-expenses-one.vercel.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- Semantic HTML5
+- CSS Modules
 - Flexbox
-- CSS Grid
-- [React](https://reactjs.org/) - JS library
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- SVG rendering with `<rect>` and `viewBox`
 
 ### What I learned
 
-# During this project I deepened my understanding of:
+During this project I:
 
-- Implementing custom drag-and-drop file upload using native browser APIs
-
-- Managing file input state manually with DataTransfer
-
-- Reusing form logic and validation across multiple inputs
-
-- Providing accessible error messages and real-time validation feedback
-
-- Creating responsive layouts with Tailwind
-
-- Handling file previews efficiently and cleaning up memory via URL.revokeObjectURL
+- Practiced dynamic rendering of SVG elements based on JSON data
+- Learned how to calculate proportional heights for bars using max value from dataset
+- Created a responsive layout using CSS modules and Flexbox
+- Implemented custom tooltips that dynamically show above bars on hover
+- Worked with relative units and positioning in SVG and DOM
+- Learned how to properly structure and fetch local JSON files in a Vite project
 
 ### Continued development
 
 In the future, I plan to:
 
-- Extract form logic and drag-n-drop into custom hooks and stores for reuse
-
-- Improve accessibility by adding more ARIA roles and dynamic descriptions
-
-- Add ticket download as PDF
-
-- Connect the form to a backend to save ticket data
+- Add animation when bars appear or grow on page load
+- Improve accessibility with ARIA attributes and focus states
+- Add a dark mode toggle
+- Expand the dataset to allow users to switch between weeks or months
 
 ### Useful resources
 
-- [MDN](https://developer.mozilla.org/ru/docs/Web/API/DataTransfer)
+- [SVG viewBox and coordinate system](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox)
+- [How to use public assets in Vite](https://vitejs.dev/guide/assets.html#the-public-directory)
+- [CSS Modules](https://github.com/css-modules/css-modules)
 
 ## Author
 
-- GitHub - [GitHub](https://github.com/PavAndrei/)
-- Frontend Mentor - [FrontendMentor](https://www.frontendmentor.io/profile/PavAndrei)
+- GitHub - [PavAndrei](https://github.com/PavAndrei/)
+- Frontend Mentor - [@PavAndrei](https://www.frontendmentor.io/profile/PavAndrei)
