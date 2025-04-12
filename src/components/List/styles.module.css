@@ -68,7 +68,7 @@
   color: var(--white);
   padding: 5px;
   width: calc(100% - 10px);
-  font-size: 0.75rem;
+  font-size: 14px;
   border-radius: 4px;
   transform: translateY(0px);
   white-space: nowrap;
@@ -84,5 +84,9 @@
 @media (max-width: 400px) {
   .day {
     font-size: 14px;
+  }
+
+  .amountLabel {
+    font-size: 10px;
   }
 }
